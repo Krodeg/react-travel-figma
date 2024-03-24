@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutUsContianer, BestServicesContainer, CategoryContainer, HeaderButton, HomeContainer, LogoContainer, TopDestinationContainer, TopSellingContainer, TopSellingImg, TripContainer } from '../../style'
+import { AboutUsContianer, BestServicesContainer, CategoryContainer, FooterTop, FooterTopButton, HeaderButton, HomeContainer, LogoContainer, TopDestinationContainer, TopSellingContainer, TopSellingImg, TripContainer } from '../../style'
 
 import box1 from '../../assets/box-1-img.svg';
 import box2 from '../../assets/box-2-img.svg';
@@ -29,6 +29,9 @@ import logo2 from '../../assets/logo-2.png'
 import logo3 from '../../assets/logo-3.png'
 import logo4 from '../../assets/logo-4.png'
 import logo5 from '../../assets/logo-5.png'
+
+import telegramIcon from '../../assets/telegram.svg'
+import emailIcon from '../../assets/email.svg'
 
 function Home() {
   return (
@@ -180,6 +183,19 @@ function Home() {
       </LogoContainer>
       
       {/* Footer top */}
+      <div style={{display: "flex", flexDirection: "column", alignItems: "center", position: "relative", right: "0px", top: "300px", color: "#5E6282"}}>
+        <img src={telegramIcon} alt="" style={{position: "relative", left: "580px", top: "-50px", zIndex: "1"}}/>
+        <h1>Subscribe to get information, latest news and other</h1>
+        <h1>interesting offers about Jadoo</h1>
+
+        <div style={{marginTop: "50px"}}>
+          <img src={emailIcon} alt="" />
+          <input type="email" name="email" id="email" placeholder='Your email' style={{height: "48px", backgroundColor: "#fff", borderRadius: "10px", border: "1px solid black", padding: "0 20px", width: "300px", margin: "0 20px 0 -20px", zIndex: "-1 "}}/>
+          <FooterTopButton>Subscribe</FooterTopButton>
+        </div>
+      </div>
+
+      <FooterTop/>
     </div>
   )
 }

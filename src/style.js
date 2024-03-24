@@ -291,6 +291,7 @@ export const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 80px;
+    margin-bottom: 130px;
     div {
         box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
         width: 241px;
@@ -298,10 +299,45 @@ export const LogoContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
 `
 
 export const FooterTop = styled.div`
+    width: 1170px;
+    height: 407px;
+    /* border-radius: 20px 129px 20px 20px; */
+    border-radius: 129px 20px 20px 20px;
+    opacity: 0.2;
+    background: var(--light-color, #DFD7F9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    color: #5E6282;
+    h1 {
+        color: var(--TEXT-CLR, #5E6282);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px; /* 163.636% */
+    }
+`
 
+export const FooterTopButton = styled.button`
+    width: 140px;
+    height: 48px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
+    z-index: -2;
+`
+
+// Footer //
+export const Footer = styled.div`
+    
 `
