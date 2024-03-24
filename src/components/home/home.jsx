@@ -1,13 +1,15 @@
 import React from 'react'
-import { BestServicesContainer, CategoryContainer, HeaderButton, HomeContainer, TopSellingContainer } from '../../style'
-import headerDecore from '../../assets/header-decor.png'
-import playButton from '../../assets/play-button.png'
-import travelWomen from '../../assets/travel-women.png'
+import { BestServicesContainer, CategoryContainer, HeaderButton, HomeContainer, TopDestinationContainer, TopSellingContainer, TopSellingImg } from '../../style'
 
 import box1 from '../../assets/box-1-img.svg';
 import box2 from '../../assets/box-2-img.svg';
 import box3 from '../../assets/box-3-img.png';
 import box4 from '../../assets/box-4-img.svg';
+
+import destination1 from '../../assets/destination-1.png'
+import destination2 from '../../assets/destination-2.png'
+import destination3 from '../../assets/destination-3.png'
+import navigation from '../../assets/navigation.svg'
 
 import boxDecore from '../../assets/box-decore.png'
 
@@ -60,6 +62,48 @@ function Home() {
       {/* top selling */}
       <TopSellingContainer>
         <p className='top-selling-title'>Top Selling</p>
+        <h1 style={{marginBottom: "50px"}}>Top Destinations</h1>
+        <TopDestinationContainer>
+          <div className="box">
+            <div className='italy-container'>
+              <TopSellingImg src={destination1} />
+            </div>
+
+            <div className='description-container' style={{display: "flex", flexDirection: 'column', gap: "19px"}}>
+              <div style={{display: "flex", justifyContent: "space-between"}}>
+                <p>Rome, Italty</p>
+                <p>$5,42k</p>
+              </div>
+              <div style={{display: "flex", gap: "10px"}}>
+                <img src={navigation} alt="" />
+                <p>10 Days Trip</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className='italy-container'>
+              <TopSellingImg src={destination2} />
+            </div>
+          </div>
+
+          <div className="box">
+            <div className='italy-container'>
+              <TopSellingImg src={destination3} />
+            </div>
+
+            <div className='description-container' style={{display: "flex", flexDirection: 'column', gap: "19px"}}>
+              <div style={{display: "flex", justifyContent: "space-between"}}>
+                <p>Full Europe</p>
+                <p>$15k</p>
+              </div>
+              <div style={{display: "flex", gap: "10px"}}>
+                <img src={navigation} alt="" />
+                <p>28 Days Trip</p>
+              </div>
+            </div>
+          </div>
+        </TopDestinationContainer>
       </TopSellingContainer>
 
     </div>

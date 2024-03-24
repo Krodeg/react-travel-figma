@@ -138,5 +138,75 @@ export const BestServicesContainer = styled.div`
 
 // top selling //
 export const TopSellingContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    p.top-selling-title {
+        color: var(--TEXT-CLR, #5E6282);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    h1 {
+        color: var(--3rd, #14183E);
+        text-align: center;
+        font-family: Volkhov;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+`
 
+export const TopDestinationContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    div.box {
+        width: 400px;
+        height: 600px;
+        position: relative;
+    }
+
+    div.box .italy-container {
+        width: 100%;
+        height: 470px;
+        /* position: relative; */
+    }
+
+    .description-container {
+        border: 1px solid #000;
+        width: 332px;
+        left: 84px;
+        position: absolute;
+        bottom: 95px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        border-radius: 0 0 24px 24px;
+        background-color: #fff;
+        box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+        border: none;
+
+        p {
+            color: var(--TEXT-CLR, #5E6282);
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 124.5%; /* 22.41px */
+        }
+
+    }
+`
+
+export const TopSellingImg = styled.img`
+    width: 500px;
+    height: 700px;
+    z-index: -1;
 `
