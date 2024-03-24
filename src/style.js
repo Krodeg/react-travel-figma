@@ -210,3 +210,98 @@ export const TopSellingImg = styled.img`
     height: 700px;
     z-index: -1;
 `
+
+// Trip container // 
+export const TripContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-left: 300px;
+    .trip-container-title {
+        color: var(--TEXT-CLR, #5E6282);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    h1 {
+        color: var(--3rd, #14183E);
+        font-family: Volkhov;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .trip-first-title {
+        color: var(--TEXT-CLR, #5E6282);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124.5%; /* 19.92px */
+    }
+    .trip-second-title {
+        color: var(--TEXT-CLR, #5E6282);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.5%; /* 19.92px */
+    }
+`
+
+// about us //
+export const AboutUsContianer = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-left: 200px;
+    .left p {
+        color: var(--TEXT-CLR, #5E6282);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .left h1 {
+        color: var(--3rd, #14183E);
+        font-family: Volkhov;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .left img {
+        width: 87px;
+        height: 12px;
+        flex-shrink: 0;
+    }
+`
+
+// logos //
+
+export const LogoContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    div {
+        box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+        width: 241px;
+        height: 86px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+`
+
+export const FooterTop = styled.div`
+
+`
