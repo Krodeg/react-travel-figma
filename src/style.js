@@ -338,6 +338,44 @@ export const FooterTopButton = styled.button`
 `
 
 // Footer //
-export const Footer = styled.div`
-    
+export const FooterContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 80px;
+
+    .footer-col-1 h1 {
+        color: var(--1st, #181E4B);
+        font-family: Poppins;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .footer-col-1 p {
+        color: var(--TEXT-CLR, #5E6282);
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.5%; /* 16.185px */
+    }
+    .footer-title {
+        color: var(--black, #080809);
+        font-family: Poppins;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124.5%; /* 26.145px */
+        margin-bottom: 20px;
+    }
+    .footer-element {
+        color: var(--TEXT-CLR, #5E6282);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.5%; /* 22.41px */
+        margin-bottom: 10px;
+    }
 `
