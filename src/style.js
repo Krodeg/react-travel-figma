@@ -72,9 +72,7 @@ export const CategoryContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 1000px;
-    width: 90vw;
+    width: 100vw;
     height: 500px;
     p.category-title{
         color: var(--TEXT-CLR, #5E6282);
@@ -134,6 +132,7 @@ export const BestServicesContainer = styled.div`
         width: 267px;
         height: 314px;
         position: relative;
+        margin-right: -150px;
     }
 `
 

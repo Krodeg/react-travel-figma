@@ -13,24 +13,7 @@ import boxDecore from '../../assets/box-decore.png'
 
 function Home() {
   return (
-    <HomeContainer>
-      <div className="left">
-        <p className='header-first-text'>Best Destinations around the world</p>
-        <h1>Travel, enjoy <br />and live a new <br />and full life</h1>
-        <img src={headerDecore} alt="underline" style={{position: "absolute", top: "320px", left: "300px", zIndex: "-1"}}/>
-        <p className='header-text'>Built Wicket longer admire do barton vanity itself do in it. <br /> Preferred to sportsmen it engrossed listening. Park gate <br /> sell they west hard for the.</p>
-        <div style={{display: "flex", alignItems: "center"}}>
-          <HeaderButton>Find out more</HeaderButton>
-          <div style={{display: "flex", alignItems: "center", height: "100%"}}>
-            <img src={playButton} alt="play button" style={{marginTop: "30px", cursor: "pointer"}}/>
-            <p style={{marginLeft: "-20px", color: "#686D77"}}>Play Demo</p>
-          </div>
-        </div>
-      </div>
-      <div className="right">
-        <img src={travelWomen} alt="people" />
-      </div>
-
+    <div>
       {/* home */}
       <CategoryContainer>
         <p className='category-title'>CATEGORY </p>
@@ -53,7 +36,7 @@ function Home() {
           </div>
 
           <div>
-            <img src={boxDecore} alt="decore"  style={{position: "absolute", left: "570px", top: "380px", zIndex: "-1"}}/>
+            <img src={boxDecore} alt="decore"  style={{position: "relative", left: "-230px", zIndex: "-1", marginTop: "300px"}}/>
           </div>
 
           <div className="box">
@@ -79,7 +62,7 @@ function Home() {
         <p className='top-selling-title'>Top Selling</p>
       </TopSellingContainer>
 
-    </HomeContainer>
+    </div>
   )
 }
 
